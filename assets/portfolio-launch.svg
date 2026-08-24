@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
+  <title id="title">Moro OS launch animation</title>
+  <desc id="desc">Animated terminal introduction for 王博文 (Moro)</desc>
+  <style>
+    .window { fill: #08090a; stroke: #2a2e33; stroke-width: 2; }
+    .bar { fill: #101214; }
+    .divider { stroke: #2a2e33; stroke-width: 1; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .title { fill: #e5e5e6; font-size: 18px; font-weight: 700; }
+    .meta { fill: #62666d; font-size: 12px; letter-spacing: .8px; }
+    .line { opacity: 0; animation: reveal 8s ease-in-out infinite; }
+    .l1 { animation-delay: .15s; }
+    .l2 { animation-delay: .48s; }
+    .l3 { animation-delay: .81s; }
+    .l4 { animation-delay: 1.14s; }
+    .l5 { animation-delay: 1.47s; }
+    .l6 { animation-delay: 1.80s; }
+    .l7 { animation-delay: 2.13s; }
+    .l8 { animation-delay: 2.46s; }
+    .body { fill: #d0d6e0; font-size: 16px; }
+    .prompt { fill: #b62b1a; font-size: 16px; font-weight: 700; }
+    .ok { fill: #4aa176; font-weight: 700; }
+    .ready { fill: #b62b1a; font-size: 17px; font-weight: 700; opacity: 0; animation: ready 8s ease-in-out infinite; }
+    .cta { fill: #d0d6e0; font-size: 14px; letter-spacing: 1.8px; opacity: 0; animation: cta 8s ease-in-out infinite; }
+    .arrow { fill: #b62b1a; font-size: 22px; opacity: 0; animation: arrow 1.4s ease-in-out infinite; animation-delay: 3.9s; }
+    .cursor { fill: #b62b1a; animation: blink .85s steps(1) infinite; }
+    @keyframes reveal {
+      0%, 5% { opacity: 0; transform: translateY(5px); }
+      10%, 77% { opacity: 1; transform: translateY(0); }
+      88%, 100% { opacity: 0; transform: translateY(-2px); }
+    }
+    @keyframes ready {
+      0%, 42% { opacity: 0; transform: translateY(5px); }
+      48%, 82% { opacity: 1; transform: translateY(0); }
+      92%, 100% { opacity: 0; }
+    }
+    @keyframes cta {
+      0%, 50% { opacity: 0; }
+      57%, 84% { opacity: 1; }
+      92%, 100% { opacity: 0; }
+    }
+    @keyframes arrow {
+      0%, 100% { opacity: .35; transform: translateX(0); }
+      50% { opacity: 1; transform: translateX(7px); }
+    }
+    @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .line, .ready, .cta, .arrow, .cursor { animation: none; opacity: 1; }
+    }
+  </style>
+
+  <rect class="window" x="1" y="1" width="998" height="518" rx="18"/>
+  <path class="bar" d="M19 2h962a18 18 0 0 1 18 18v31H1V20A18 18 0 0 1 19 2z"/>
+  <line class="divider" x1="1" y1="52" x2="999" y2="52"/>
+  <circle cx="24" cy="27" r="7" fill="#ef6461"/>
+  <circle cx="47" cy="27" r="7" fill="#efbd4e"/>
+  <circle cx="70" cy="27" r="7" fill="#55b96f"/>
+  <text class="mono meta" x="500" y="31" text-anchor="middle">moro@moro-mac — Moro-w — 100×30</text>
+
+  <text class="mono title line l1" x="54" y="93">moro OS v1.0.0 — Crimson Void</text>
+
+  <text class="mono body line l2" x="54" y="126">[ <tspan class="ok">OK</tspan> ] 加载内核 /profile</text>
+  <text class="mono body line l3" x="54" y="157">[ <tspan class="ok">OK</tspan> ] 挂载 /skills      技能</text>
+  <text class="mono body line l4" x="54" y="188">[ <tspan class="ok">OK</tspan> ] 挂载 /projects    项目</text>
+  <text class="mono body line l5" x="54" y="219">[ <tspan class="ok">OK</tspan> ] 挂载 /contact     联系</text>
+
+  <text class="mono prompt line l6" x="54" y="267">moro@moro-mac ~ % <tspan class="body">whoami</tspan></text>
+  <text class="mono body line l7" x="54" y="298">王博文 · Moro · 本科</text>
+
+  <text class="mono prompt line l8" x="54" y="346">moro@moro-mac ~ % <tspan class="body">open moro.os</tspan></text>
+
+  <text class="mono ready" x="54" y="389">SYSTEM READY</text>
+  <text class="mono cta" x="500" y="448" text-anchor="middle">CLICK TO LAUNCH · MORO</text>
+  <text class="mono arrow" x="500" y="483" text-anchor="middle">→</text>
+</svg>
