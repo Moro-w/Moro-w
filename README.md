@@ -1,4 +1,4 @@
-# Hi, I'm 王博文 (Moro) 👋
+# Hi, I'm Moro 👋
 
 [![Moro — Synthwave pixel intro](https://raw.githubusercontent.com/Moro-w/Moro-w/main/assets/portfolio-launch.svg)](https://github.com/Moro-w)
 
