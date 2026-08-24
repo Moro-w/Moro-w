@@ -1,81 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
-  <title id="title">Moro — Crimson editorial intro</title>
-  <desc id="desc">Animated editorial cover for 王博文 (Moro)</desc>
+  <title id="title">Moro — Synthwave pixel intro</title>
+  <desc id="desc">Pixel-art synthwave sunset for 王博文 (Moro)</desc>
 
   <defs>
-    <radialGradient id="glow" cx="72%" cy="16%" r="75%">
-      <stop offset="0%" stop-color="#b62b1a" stop-opacity="0.28"/>
-      <stop offset="45%" stop-color="#6e1710" stop-opacity="0.10"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0533"/>
+      <stop offset="35%" stop-color="#3b1d8f"/>
+      <stop offset="60%" stop-color="#b537f2"/>
+      <stop offset="82%" stop-color="#ff6ec7"/>
+      <stop offset="100%" stop-color="#ffb347"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff6b0"/>
+      <stop offset="55%" stop-color="#ffd319"/>
+      <stop offset="100%" stop-color="#ff7e29"/>
     </radialGradient>
   </defs>
 
   <style>
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
-    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
-
-    .topline { fill: #62666d; font-size: 13px; letter-spacing: 6px; opacity: 0; animation: fade 9s ease-in-out infinite; animation-delay: .2s; }
-    .name { fill: #ffffff; font-size: 112px; font-weight: 300; letter-spacing: -0.025em; opacity: 0; animation: rise 9s ease-in-out infinite; animation-delay: .5s; }
-    .line-grow { transform: scaleX(0); transform-box: fill-box; transform-origin: center; animation: grow 9s ease-in-out infinite; animation-delay: 1.2s; }
-    .moro { fill: #d0d6e0; font-size: 54px; font-weight: 300; letter-spacing: 20px; opacity: 0; animation: fade 9s ease-in-out infinite; animation-delay: 1.8s; }
-    .enter { fill: #62666d; font-size: 12px; letter-spacing: 6px; opacity: 0; animation: fade 9s ease-in-out infinite; animation-delay: 2.4s; }
-    .arrow { fill: #b62b1a; font-size: 18px; animation: breathe 2.2s ease-in-out infinite; }
-
-    /* 故障抖动副本 */
-    .glitch-red { fill: #b62b1a; font-size: 112px; font-weight: 300; letter-spacing: -0.025em; opacity: 0; animation: glitchR 9s steps(1) infinite; }
-    .glitch-cyan { fill: #02b8cc; font-size: 112px; font-weight: 300; letter-spacing: -0.025em; opacity: 0; animation: glitchC 9s steps(1) infinite; }
-
-    @keyframes fade {
-      0%, 6% { opacity: 0; transform: translateY(8px); }
-      10%, 100% { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes rise {
-      0%, 7% { opacity: 0; transform: translateY(26px); }
-      13%, 100% { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes grow {
-      0%, 16% { transform: scaleX(0); }
-      30%, 100% { transform: scaleX(1); }
-    }
-    @keyframes breathe {
-      0%, 100% { opacity: .25; transform: translateX(0); }
-      50% { opacity: 1; transform: translateX(6px); }
-    }
-    @keyframes glitchR {
-      0%, 46%, 49.2%, 53%, 100% { opacity: 0; transform: translate(0, 0); }
-      46.4% { opacity: .55; transform: translate(-4px, 1px); }
-      47.6% { opacity: .55; transform: translate(3px, -1px); }
-      50.4% { opacity: .5; transform: translate(-2px, 0); }
-    }
-    @keyframes glitchC {
-      0%, 46%, 49.2%, 53%, 100% { opacity: 0; transform: translate(0, 0); }
-      46.8% { opacity: .5; transform: translate(4px, -1px); }
-      48.4% { opacity: .5; transform: translate(-3px, 1px); }
-      51.2% { opacity: .45; transform: translate(2px, 0); }
-    }
-
+    .star { animation: blink 2.4s steps(1) infinite; }
+    .cloud { animation: drift 32s linear infinite; }
+    .moro { opacity: 0; animation: fadein 1.6s ease forwards; animation-delay: .9s; }
+    @keyframes blink { 0%,100% {opacity:1} 50% {opacity:.15} }
+    @keyframes drift { from {transform:translateX(-160px)} to {transform:translateX(1160px)} }
+    @keyframes fadein { to {opacity:1} }
     @media (prefers-reduced-motion: reduce) {
-      .topline, .name, .moro, .enter { animation: none; opacity: 1; transform: none; }
-      .line-grow { animation: none; transform: scaleX(1); }
-      .glitch-red, .glitch-cyan { animation: none; opacity: 0; }
-      .arrow { animation: none; }
+      .star, .cloud { animation: none; }
+      .moro { animation: none; opacity: 1; }
     }
   </style>
 
-  <rect width="1000" height="520" fill="#000000"/>
-  <rect width="1000" height="520" fill="url(#glow)"/>
+  <rect width="1000" height="520" fill="url(#sky)"/>
 
-  <text class="mono topline" x="500" y="72" text-anchor="middle">MORO · PORTFOLIO · 2025</text>
+  ['<rect class="star" x="120" y="60" width="3" height="3" fill="#ffffff" style="animation-delay:0.31s"/>', '<rect class="star" x="300" y="40" width="2" height="2" fill="#ffffff" style="animation-delay:1.8599999999999999s"/>', '<rect class="star" x="700" y="52" width="3" height="3" fill="#ffffff" style="animation-delay:0.0s"/>', '<rect class="star" x="850" y="72" width="2" height="2" fill="#ffffff" style="animation-delay:0.9299999999999999s"/>', '<rect class="star" x="950" y="36" width="3" height="3" fill="#ffffff" style="animation-delay:1.55s"/>', '<rect class="star" x="180" y="112" width="2" height="2" fill="#ffffff" style="animation-delay:1.55s"/>', '<rect class="star" x="620" y="88" width="2" height="2" fill="#ffffff" style="animation-delay:1.24s"/>', '<rect class="star" x="420" y="28" width="2" height="2" fill="#ffffff" style="animation-delay:0.0s"/>']
 
-  <!-- 主标题 + 故障副本（三层叠放，只在故障时刻闪现红/青） -->
-  <text class="sans glitch-cyan" x="500" y="252" text-anchor="middle">王博文</text>
-  <text class="sans glitch-red" x="500" y="252" text-anchor="middle">王博文</text>
-  <text class="sans name" x="500" y="252" text-anchor="middle">王博文</text>
+  <g class="cloud" style="animation-delay:0s" fill="#ffd6e8" opacity="0.85"><rect x="148" y="90" width="14" height="14"/><rect x="162" y="90" width="14" height="14"/><rect x="134" y="104" width="14" height="14"/><rect x="148" y="104" width="14" height="14"/><rect x="162" y="104" width="14" height="14"/><rect x="176" y="104" width="14" height="14"/><rect x="120" y="118" width="14" height="14"/><rect x="134" y="118" width="14" height="14"/><rect x="148" y="118" width="14" height="14"/><rect x="162" y="118" width="14" height="14"/><rect x="176" y="118" width="14" height="14"/><rect x="190" y="118" width="14" height="14"/><rect x="134" y="132" width="14" height="14"/><rect x="148" y="132" width="14" height="14"/><rect x="162" y="132" width="14" height="14"/><rect x="176" y="132" width="14" height="14"/></g><g class="cloud" style="animation-delay:-8s" fill="#ffd6e8" opacity="0.85"><rect x="668" y="60" width="14" height="14"/><rect x="682" y="60" width="14" height="14"/><rect x="654" y="74" width="14" height="14"/><rect x="668" y="74" width="14" height="14"/><rect x="682" y="74" width="14" height="14"/><rect x="696" y="74" width="14" height="14"/><rect x="640" y="88" width="14" height="14"/><rect x="654" y="88" width="14" height="14"/><rect x="668" y="88" width="14" height="14"/><rect x="682" y="88" width="14" height="14"/><rect x="696" y="88" width="14" height="14"/><rect x="710" y="88" width="14" height="14"/><rect x="654" y="102" width="14" height="14"/><rect x="668" y="102" width="14" height="14"/><rect x="682" y="102" width="14" height="14"/><rect x="696" y="102" width="14" height="14"/></g><g class="cloud" style="animation-delay:-16s" fill="#ffd6e8" opacity="0.85"><rect x="788" y="140" width="14" height="14"/><rect x="802" y="140" width="14" height="14"/><rect x="774" y="154" width="14" height="14"/><rect x="788" y="154" width="14" height="14"/><rect x="802" y="154" width="14" height="14"/><rect x="816" y="154" width="14" height="14"/><rect x="760" y="168" width="14" height="14"/><rect x="774" y="168" width="14" height="14"/><rect x="788" y="168" width="14" height="14"/><rect x="802" y="168" width="14" height="14"/><rect x="816" y="168" width="14" height="14"/><rect x="830" y="168" width="14" height="14"/><rect x="774" y="182" width="14" height="14"/><rect x="788" y="182" width="14" height="14"/><rect x="802" y="182" width="14" height="14"/><rect x="816" y="182" width="14" height="14"/></g>
 
-  <rect class="line-grow" x="360" y="300" width="280" height="2" fill="#b62b1a"/>
+  <!-- 太阳 -->
+  <circle cx="500" cy="210" r="110" fill="url(#sun)"/>
+  <rect x="393.6" y="234.5" width="212.8" height="7" fill="#2a0a4a" opacity="0.92"/><rect x="403.1" y="258.5" width="193.9" height="7" fill="#2a0a4a" opacity="0.92"/><rect x="420.5" y="282.5" width="159.0" height="7" fill="#2a0a4a" opacity="0.92"/><rect x="454.2" y="306.5" width="91.7" height="7" fill="#2a0a4a" opacity="0.92"/>
 
-  <text class="sans moro" x="500" y="390" text-anchor="middle">M O R O</text>
+  <!-- 网格 -->
+  <line x1="-400" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="-300" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="-200" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="-100" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="0" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="100" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="200" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="300" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="400" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="500" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="600" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="700" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="800" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="900" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="1000" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="1100" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="1200" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="1300" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="1400" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="0" y1="432" x2="1000" y2="432" stroke="#ff6ec7" stroke-width="1.5" opacity="0.6"/><line x1="0" y1="448" x2="1000" y2="448" stroke="#ff6ec7" stroke-width="1.5" opacity="0.6"/><line x1="0" y1="468" x2="1000" y2="468" stroke="#ff6ec7" stroke-width="1.5" opacity="0.6"/><line x1="0" y1="494" x2="1000" y2="494" stroke="#ff6ec7" stroke-width="1.5" opacity="0.6"/><line x1="0" y1="520" x2="1000" y2="520" stroke="#ff6ec7" stroke-width="1.5" opacity="0.6"/>
 
-  <text class="mono enter" x="480" y="462" text-anchor="end">ENTER</text>
-  <text class="mono arrow" x="492" y="463" text-anchor="start">→</text>
+  <!-- MORO 像素字 -->
+  <path class="moro" d="M370 348h10v10h-10Z M410 348h10v10h-10Z M370 358h10v10h-10Z M380 358h10v10h-10Z M400 358h10v10h-10Z M410 358h10v10h-10Z M370 368h10v10h-10Z M390 368h10v10h-10Z M410 368h10v10h-10Z M370 378h10v10h-10Z M410 378h10v10h-10Z M370 388h10v10h-10Z M410 388h10v10h-10Z M370 398h10v10h-10Z M410 398h10v10h-10Z M370 408h10v10h-10Z M410 408h10v10h-10Z M450 348h10v10h-10Z M460 348h10v10h-10Z M470 348h10v10h-10Z M440 358h10v10h-10Z M480 358h10v10h-10Z M440 368h10v10h-10Z M480 368h10v10h-10Z M440 378h10v10h-10Z M480 378h10v10h-10Z M440 388h10v10h-10Z M480 388h10v10h-10Z M440 398h10v10h-10Z M480 398h10v10h-10Z M450 408h10v10h-10Z M460 408h10v10h-10Z M470 408h10v10h-10Z M510 348h10v10h-10Z M520 348h10v10h-10Z M530 348h10v10h-10Z M510 358h10v10h-10Z M540 358h10v10h-10Z M510 368h10v10h-10Z M540 368h10v10h-10Z M510 378h10v10h-10Z M520 378h10v10h-10Z M530 378h10v10h-10Z M510 388h10v10h-10Z M530 388h10v10h-10Z M510 398h10v10h-10Z M540 398h10v10h-10Z M510 408h10v10h-10Z M550 408h10v10h-10Z M590 348h10v10h-10Z M600 348h10v10h-10Z M610 348h10v10h-10Z M580 358h10v10h-10Z M620 358h10v10h-10Z M580 368h10v10h-10Z M620 368h10v10h-10Z M580 378h10v10h-10Z M620 378h10v10h-10Z M580 388h10v10h-10Z M620 388h10v10h-10Z M580 398h10v10h-10Z M620 398h10v10h-10Z M590 408h10v10h-10Z M600 408h10v10h-10Z M610 408h10v10h-10Z" fill="#ffffff"/>
 </svg>
