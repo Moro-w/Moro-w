@@ -1,8 +1,8 @@
 # Hi, I'm Moro 👋
 
-[![Moro — Synthwave pixel intro](https://raw.githubusercontent.com/Moro-w/Moro-w/main/assets/portfolio-launch.svg)](https://github.com/Moro-w)
+[![王博文 (Moro) — Human in the loop](https://raw.githubusercontent.com/Moro-w/Moro-w/main/assets/portfolio-launch.svg)](https://github.com/Moro-w)
 
-<p align="center"><sub>PRESS START · 进入 Moro 的主页</sub></p>
+<p align="center"><sub>Human in the loop</sub></p>
 
 你好，我是王博文，英文名 Moro。本科毕业，热爱技术与创造。
 

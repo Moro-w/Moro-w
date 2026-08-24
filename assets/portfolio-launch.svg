@@ -1,48 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
-  <title id="title">Moro — Synthwave pixel intro</title>
-  <desc id="desc">Pixel-art synthwave sunset for 王博文 (Moro)</desc>
-
-  <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1a0533"/>
-      <stop offset="35%" stop-color="#3b1d8f"/>
-      <stop offset="60%" stop-color="#b537f2"/>
-      <stop offset="82%" stop-color="#ff6ec7"/>
-      <stop offset="100%" stop-color="#ffb347"/>
-    </linearGradient>
-    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fff6b0"/>
-      <stop offset="55%" stop-color="#ffd319"/>
-      <stop offset="100%" stop-color="#ff7e29"/>
-    </radialGradient>
-  </defs>
-
+  <title id="title">王博文 (Moro) — Human in the loop</title>
+  <desc id="desc">ASCII art portrait and "Human in the loop" tagline with wave animation</desc>
   <style>
-    .star { animation: blink 2.4s steps(1) infinite; }
-    .cloud { animation: drift 32s linear infinite; }
-    .moro { opacity: 0; animation: fadein 1.6s ease forwards; animation-delay: .9s; }
-    @keyframes blink { 0%,100% {opacity:1} 50% {opacity:.15} }
-    @keyframes drift { from {transform:translateX(-160px)} to {transform:translateX(1160px)} }
-    @keyframes fadein { to {opacity:1} }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, "Courier New", monospace; }
+    .wave { animation: wave 4.5s ease-in-out infinite; }
+    @keyframes wave {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3.5px); }
+    }
     @media (prefers-reduced-motion: reduce) {
-      .star, .cloud { animation: none; }
-      .moro { animation: none; opacity: 1; }
+      .wave { animation: none; }
     }
   </style>
+  <rect width="1000" height="520" fill="#ffffff"/>
 
-  <rect width="1000" height="520" fill="url(#sky)"/>
+  <text class="mono wave" x="50" y="130" font-size="10" fill="#000000" style="animation-delay:0.0s">..............................................</text>
+  <text class="mono wave" x="50" y="140" font-size="10" fill="#000000" style="animation-delay:0.13s">...................&#x27;,tJJJJJ,..................</text>
+  <text class="mono wave" x="50" y="150" font-size="10" fill="#000000" style="animation-delay:0.26s">&#x27;.......&#x27;........|O$$$$$88$$@d`......&#x27;&#x27;...&#x27;..&#x27;</text>
+  <text class="mono wave" x="50" y="160" font-size="10" fill="#000000" style="animation-delay:0.39s">................)$$%CddpYq$$$$$U..............</text>
+  <text class="mono wave" x="50" y="170" font-size="10" fill="#000000" style="animation-delay:0.52s">.....&#x27;........&#x27;]$$f*$v[}@&amp;u$$$$@v.........&#x27;...</text>
+  <text class="mono wave" x="50" y="180" font-size="10" fill="#000000" style="animation-delay:0.65s">..............(!$$-/,zMMziI@@/%$%?.....&#x27;&#x27;.....</text>
+  <text class="mono wave" x="50" y="190" font-size="10" fill="#000000" style="animation-delay:0.78s">............&#x27;&#x27;t@$$X$$hJUYud$$d@$@].&#x27;..........</text>
+  <text class="mono wave" x="50" y="200" font-size="10" fill="#000000" style="animation-delay:0.91s">............&#x27;&#x27;f$@aI......`^^^&#x27;WY8]&#x27;........&#x27;&#x27;.</text>
+  <text class="mono wave" x="50" y="210" font-size="10" fill="#000000" style="animation-delay:1.04s">............&#x27;.[@Jc&amp;&amp;&amp;(..`,+_!&quot;&quot;W8w;.&#x27;...&#x27;.&#x27;...</text>
+  <text class="mono wave" x="50" y="220" font-size="10" fill="#000000" style="animation-delay:1.17s">...&#x27;..........,W-Y?~|Y#(}!z*!Um~Xm^I..........</text>
+  <text class="mono wave" x="50" y="230" font-size="10" fill="#000000" style="animation-delay:1.3s">.&#x27;.........&#x27;..JfpIiCU-f:t...&#x27;c`.n][@x.........</text>
+  <text class="mono wave" x="50" y="240" font-size="10" fill="#000000" style="animation-delay:1.43s">..........._!._[[n&quot;.Iwl&#x27;&#x27;f,`1_&#x27;.!X$W1.&#x27;.......</text>
+  <text class="mono wave" x="50" y="250" font-size="10" fill="#000000" style="animation-delay:1.56s">.....?Xt...|?,.~Yj.&#x27;&#x27;&#x27;)&#x27;`&#x27;.&#x27;...;r-.&#x27;.....&#x27;....</text>
+  <text class="mono wave" x="50" y="260" font-size="10" fill="#000000" style="animation-delay:1.69s">.&#x27;...-i&#x27;|.}i:i..`}:.!~&#x27;&#x27;&#x27;}r&#x27;...f......&#x27;.......</text>
+  <text class="mono wave" x="50" y="270" font-size="10" fill="#000000" style="animation-delay:1.82s">&#x27;..&#x27;.&#x27;0^lIC&#x27;:i...`].&#x27;&#x27;&#x27;&quot;^&#x27;.&#x27;.?x`.........&#x27;....</text>
+  <text class="mono wave" x="50" y="280" font-size="10" fill="#000000" style="animation-delay:1.95s">.......C;n/.r&#x27;&#x27;.&#x27;..1/&#x27;.....^+`.`.....&#x27;&#x27;.......</text>
+  <text class="mono wave" x="50" y="290" font-size="10" fill="#000000" style="animation-delay:2.08s">.&#x27;....-&#x27;!|.._.&#x27;.&#x27;..^(cI..&#x27;C/l&#x27;.nof&#x27;..&#x27;.&#x27;..&#x27;...</text>
+  <text class="mono wave" x="50" y="300" font-size="10" fill="#000000" style="animation-delay:2.21s">....;j_?bvi?1(.&#x27;.&#x27;Cd@/_?]?`....i*$$*q~&#x27;&#x27;......</text>
+  <text class="mono wave" x="50" y="310" font-size="10" fill="#000000" style="animation-delay:2.34s">.&#x27;..~Y&#x27;b~v)0)i|h*$$$m,...&#x27;&#x27;..&#x27;b@0h$$$$$8h!....</text>
+  <text class="mono wave" x="50" y="320" font-size="10" fill="#000000" style="animation-delay:2.47s">...&#x27;`&quot;.&#x27;I+,.ld$$$$$$pq&amp;*qqqMWB$[8$@$$$$@$$@o}.</text>
+  <text class="mono wave" x="50" y="330" font-size="10" fill="#000000" style="animation-delay:2.6s">...&#x27;.j{..&#x27;&#x27;./@$$$$$$$@qjYYYzfhB$$$$$$$$$$$$$BI</text>
+  <text class="mono wave" x="50" y="340" font-size="10" fill="#000000" style="animation-delay:2.73s">...&#x27;i@@*:&quot;,@a$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$l</text>
+  <text class="mono wave" x="50" y="350" font-size="10" fill="#000000" style="animation-delay:2.86s">...-B8$$$$$x$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$l</text>
+  <text class="mono wave" x="50" y="360" font-size="10" fill="#000000" style="animation-delay:2.99s">...W$p0a$$@@$$$$$$@$$$$$$$$$$$$$$$$$$$$$$$$$$l</text>
+  <text class="mono wave" x="50" y="370" font-size="10" fill="#000000" style="animation-delay:3.12s">..X@$$$$$$$p@$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$l</text>
+  <text class="mono wave" x="50" y="380" font-size="10" fill="#000000" style="animation-delay:3.25s">.)8$$$$$$$$1$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$l</text>
+  <text class="mono wave" x="50" y="390" font-size="10" fill="#000000" style="animation-delay:3.38s">I%$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$l</text>
+  <text class="mono wave" x="50" y="400" font-size="10" fill="#000000" style="animation-delay:3.51s">l@$$$$@@$$$$$$$$$$$@$$$$$$$$$$$$$$$$$$$@@$$$$l</text>
 
-  ['<rect class="star" x="120" y="60" width="3" height="3" fill="#ffffff" style="animation-delay:0.31s"/>', '<rect class="star" x="300" y="40" width="2" height="2" fill="#ffffff" style="animation-delay:1.8599999999999999s"/>', '<rect class="star" x="700" y="52" width="3" height="3" fill="#ffffff" style="animation-delay:0.0s"/>', '<rect class="star" x="850" y="72" width="2" height="2" fill="#ffffff" style="animation-delay:0.9299999999999999s"/>', '<rect class="star" x="950" y="36" width="3" height="3" fill="#ffffff" style="animation-delay:1.55s"/>', '<rect class="star" x="180" y="112" width="2" height="2" fill="#ffffff" style="animation-delay:1.55s"/>', '<rect class="star" x="620" y="88" width="2" height="2" fill="#ffffff" style="animation-delay:1.24s"/>', '<rect class="star" x="420" y="28" width="2" height="2" fill="#ffffff" style="animation-delay:0.0s"/>']
-
-  <g class="cloud" style="animation-delay:0s" fill="#ffd6e8" opacity="0.85"><rect x="148" y="90" width="14" height="14"/><rect x="162" y="90" width="14" height="14"/><rect x="134" y="104" width="14" height="14"/><rect x="148" y="104" width="14" height="14"/><rect x="162" y="104" width="14" height="14"/><rect x="176" y="104" width="14" height="14"/><rect x="120" y="118" width="14" height="14"/><rect x="134" y="118" width="14" height="14"/><rect x="148" y="118" width="14" height="14"/><rect x="162" y="118" width="14" height="14"/><rect x="176" y="118" width="14" height="14"/><rect x="190" y="118" width="14" height="14"/><rect x="134" y="132" width="14" height="14"/><rect x="148" y="132" width="14" height="14"/><rect x="162" y="132" width="14" height="14"/><rect x="176" y="132" width="14" height="14"/></g><g class="cloud" style="animation-delay:-8s" fill="#ffd6e8" opacity="0.85"><rect x="668" y="60" width="14" height="14"/><rect x="682" y="60" width="14" height="14"/><rect x="654" y="74" width="14" height="14"/><rect x="668" y="74" width="14" height="14"/><rect x="682" y="74" width="14" height="14"/><rect x="696" y="74" width="14" height="14"/><rect x="640" y="88" width="14" height="14"/><rect x="654" y="88" width="14" height="14"/><rect x="668" y="88" width="14" height="14"/><rect x="682" y="88" width="14" height="14"/><rect x="696" y="88" width="14" height="14"/><rect x="710" y="88" width="14" height="14"/><rect x="654" y="102" width="14" height="14"/><rect x="668" y="102" width="14" height="14"/><rect x="682" y="102" width="14" height="14"/><rect x="696" y="102" width="14" height="14"/></g><g class="cloud" style="animation-delay:-16s" fill="#ffd6e8" opacity="0.85"><rect x="788" y="140" width="14" height="14"/><rect x="802" y="140" width="14" height="14"/><rect x="774" y="154" width="14" height="14"/><rect x="788" y="154" width="14" height="14"/><rect x="802" y="154" width="14" height="14"/><rect x="816" y="154" width="14" height="14"/><rect x="760" y="168" width="14" height="14"/><rect x="774" y="168" width="14" height="14"/><rect x="788" y="168" width="14" height="14"/><rect x="802" y="168" width="14" height="14"/><rect x="816" y="168" width="14" height="14"/><rect x="830" y="168" width="14" height="14"/><rect x="774" y="182" width="14" height="14"/><rect x="788" y="182" width="14" height="14"/><rect x="802" y="182" width="14" height="14"/><rect x="816" y="182" width="14" height="14"/></g>
-
-  <!-- 太阳 -->
-  <circle cx="500" cy="210" r="110" fill="url(#sun)"/>
-  <rect x="393.6" y="234.5" width="212.8" height="7" fill="#2a0a4a" opacity="0.92"/><rect x="403.1" y="258.5" width="193.9" height="7" fill="#2a0a4a" opacity="0.92"/><rect x="420.5" y="282.5" width="159.0" height="7" fill="#2a0a4a" opacity="0.92"/><rect x="454.2" y="306.5" width="91.7" height="7" fill="#2a0a4a" opacity="0.92"/>
-
-  <!-- 网格 -->
-  <line x1="-400" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="-300" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="-200" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="-100" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="0" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="100" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="200" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="300" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="400" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="500" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="600" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="700" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="800" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="900" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="1000" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="1100" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="1200" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="1300" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="1400" y1="520" x2="500" y2="420" stroke="#b537f2" stroke-width="1.5" opacity="0.45"/><line x1="0" y1="432" x2="1000" y2="432" stroke="#ff6ec7" stroke-width="1.5" opacity="0.6"/><line x1="0" y1="448" x2="1000" y2="448" stroke="#ff6ec7" stroke-width="1.5" opacity="0.6"/><line x1="0" y1="468" x2="1000" y2="468" stroke="#ff6ec7" stroke-width="1.5" opacity="0.6"/><line x1="0" y1="494" x2="1000" y2="494" stroke="#ff6ec7" stroke-width="1.5" opacity="0.6"/><line x1="0" y1="520" x2="1000" y2="520" stroke="#ff6ec7" stroke-width="1.5" opacity="0.6"/>
-
-  <!-- MORO 像素字 -->
-  <path class="moro" d="M370 348h10v10h-10Z M410 348h10v10h-10Z M370 358h10v10h-10Z M380 358h10v10h-10Z M400 358h10v10h-10Z M410 358h10v10h-10Z M370 368h10v10h-10Z M390 368h10v10h-10Z M410 368h10v10h-10Z M370 378h10v10h-10Z M410 378h10v10h-10Z M370 388h10v10h-10Z M410 388h10v10h-10Z M370 398h10v10h-10Z M410 398h10v10h-10Z M370 408h10v10h-10Z M410 408h10v10h-10Z M450 348h10v10h-10Z M460 348h10v10h-10Z M470 348h10v10h-10Z M440 358h10v10h-10Z M480 358h10v10h-10Z M440 368h10v10h-10Z M480 368h10v10h-10Z M440 378h10v10h-10Z M480 378h10v10h-10Z M440 388h10v10h-10Z M480 388h10v10h-10Z M440 398h10v10h-10Z M480 398h10v10h-10Z M450 408h10v10h-10Z M460 408h10v10h-10Z M470 408h10v10h-10Z M510 348h10v10h-10Z M520 348h10v10h-10Z M530 348h10v10h-10Z M510 358h10v10h-10Z M540 358h10v10h-10Z M510 368h10v10h-10Z M540 368h10v10h-10Z M510 378h10v10h-10Z M520 378h10v10h-10Z M530 378h10v10h-10Z M510 388h10v10h-10Z M530 388h10v10h-10Z M510 398h10v10h-10Z M540 398h10v10h-10Z M510 408h10v10h-10Z M550 408h10v10h-10Z M590 348h10v10h-10Z M600 348h10v10h-10Z M610 348h10v10h-10Z M580 358h10v10h-10Z M620 358h10v10h-10Z M580 368h10v10h-10Z M620 368h10v10h-10Z M580 378h10v10h-10Z M620 378h10v10h-10Z M580 388h10v10h-10Z M620 388h10v10h-10Z M580 398h10v10h-10Z M620 398h10v10h-10Z M590 408h10v10h-10Z M600 408h10v10h-10Z M610 408h10v10h-10Z" fill="#ffffff"/>
+  <text class="mono wave" x="345" y="221" font-size="6" fill="#000000" style="animation-delay:0.0s">                                                                                                                                                                          </text>
+  <text class="mono wave" x="345" y="227" font-size="6" fill="#000000" style="animation-delay:0.13s"> $$$      $$$                                                            $$$                    ,$_   $$$                         $$$                                     </text>
+  <text class="mono wave" x="345" y="233" font-size="6" fill="#000000" style="animation-delay:0.26s"> $$$      $$$                                                                                   $$_   $$$                         $$$                                     </text>
+  <text class="mono wave" x="345" y="239" font-size="6" fill="#000000" style="animation-delay:0.39s"> $$$      $$$  $$$    $$$  $$$$$$$$ $$$$$    %$$$$$$   n$$ $$$$$         $$$  $$$b$$$$$       h$$$$$  $$$$$$$$!    $$$$$$         $$$    $$$$$$l     $$$$$$    $$$n$$$$&amp;  </text>
+  <text class="mono wave" x="345" y="245" font-size="6" fill="#000000" style="animation-delay:0.52s"> $$$$$$$$$$$$  $$$    $$$  $$$$  $$$$  $$$  $$$   $$$  n$$$  t$$$        $$$  $$$$  $$$`        $$_   $$$8  $$$   $$$  $$$        $$$   $$$  M$$$  l$$$  $$$$  $$$$  C$$$ </text>
+  <text class="mono wave" x="345" y="251" font-size="6" fill="#000000" style="animation-delay:0.65s"> $$$%%%%%%$$$  $$$    $$$  $$$   $$$   $$$      [$$$$  n$$    $$$        $$$  $$$    $$m        $$_   $$$   i$$  $$$    $$*       $$$  $$$    `$$&#x27; $$$    O$$  $$$    $$$ </text>
+  <text class="mono wave" x="345" y="257" font-size="6" fill="#000000" style="animation-delay:0.78s"> $$$      $$$  $$$    $$$  $$$   $$$   $$$  ?$$$$!$$$  n$$    $$$        $$$  $$$    $$m        $$_   $$$   ;$$  $$$$$$$$$$       $$$  $$$     $$t $$$    ~$$` $$$    M$$ </text>
+  <text class="mono wave" x="345" y="263" font-size="6" fill="#000000" style="animation-delay:0.91s"> $$$      $$$  W$$   &#x27;$$$  $$$   $$$   $$$  $$$   $$$  n$$    $$$        $$$  $$$    $$m        $$]   $$$   ;$$  p$$    $8        $$$  $$$^   $$$  $$$    $$$  $$$$   $$$ </text>
+  <text class="mono wave" x="345" y="269" font-size="6" fill="#000000" style="animation-delay:1.04s"> $$$      $$$   $$$$$$$$$  $$$   $$$   $$$  $$$$$$$$$  n$$    $$$        $$$  $$$    $$m        $$$$  $$$   ;$$   $$$$$$$$        $$$   @$$$$$$$    $$$$$$$$   $$$$$$$$$  </text>
+  <text class="mono wave" x="345" y="275" font-size="6" fill="#000000" style="animation-delay:1.17s">                  ^                            ^                                                  ^                  ^^                    &#x27;^          `^      $$$  ``    </text>
+  <text class="mono wave" x="345" y="281" font-size="6" fill="#000000" style="animation-delay:1.3s">                                                                                                                                                               $$$        </text>
+  <text class="mono wave" x="345" y="287" font-size="6" fill="#000000" style="animation-delay:1.43s">                                                                                                                                                               $$$        </text>
+  <text class="mono wave" x="345" y="293" font-size="6" fill="#000000" style="animation-delay:1.56s">                                                                                                                                                                          </text>
+  <text class="mono wave" x="345" y="299" font-size="6" fill="#000000" style="animation-delay:1.69s">                                                                                                                                                                          </text>
+  <text class="mono wave" x="345" y="305" font-size="6" fill="#000000" style="animation-delay:1.82s">                                                                                                                                                                          </text>
 </svg>
