@@ -1,8 +1,8 @@
 # Hi, I'm Moro 👋
 
-[![王博文 (Moro) — Human in the loop](https://raw.githubusercontent.com/Moro-w/Moro-w/main/assets/portfolio-launch.svg)](https://github.com/Moro-w)
+[![王博文 (Moro) — 终端打字](https://raw.githubusercontent.com/Moro-w/Moro-w/main/assets/portfolio-launch.svg)](https://github.com/Moro-w)
 
-<p align="center"><sub>Human in the loop</sub></p>
+<p align="center"><sub>moro OS — Midnight Terminal</sub></p>
 
 你好，我是王博文，英文名 Moro。本科毕业，热爱技术与创造。
 
