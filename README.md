@@ -8,7 +8,7 @@
   <sub>moro OS — Midnight Terminal</sub>
 </p>
 
-## 👋 你好，我是 Moro
+## 👋 Hello，I'm Moro
 
 我是 **王博文（Moro），一名持续洞察｜持续迭代的AI产品经理**。
 
