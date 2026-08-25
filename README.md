@@ -15,7 +15,7 @@
 关注 AI 产品从需求洞察到落地的完整链路，具备从问题定义、方案设计到交付验证的完整能力。<br />
 习惯用产品思维拆解复杂问题，以可靠、可落地的方案推动产品持续迭代。
 
-`需求洞察`　·　`问题定义`　·　`架构设计`　·　`决策判断`　·　`持续迭代`
+`需求洞察`　·　`架构设计`　·　`决策判断`　·　`持续迭代`
 
 🌐 [GitHub](https://github.com/Moro-w) · ✉️ [Email](mailto:13808620008@163.com) · 💬 [微信](#)（M0roo0）
 
@@ -42,5 +42,5 @@
 ---
 
 <p align="center">
-  <code>INSIGHT · DEFINE · DESIGN · JUDGE · ITERATE</code>
+  <code>INSIGHT · DESIGN · JUDGE · ITERATE</code>
 </p>
