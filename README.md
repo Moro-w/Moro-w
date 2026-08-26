@@ -37,7 +37,10 @@
 
 ## ✍️ 写作
 
-- [【占位：你的文章标题】](#)
+- [当会议纪要进入执行环节，AI的决策边界如何确定](https://mp.weixin.qq.com/s/h-TM4HU9pxhZ8lxPWLm4kQ)
+- [Grok 4.6 接入 Copilot，模型如何进入市场？](https://mp.weixin.qq.com/s/lh-GOqMqSF4cebI6PoAIrQ)
+- [当内容管理拖慢业务，CMS能做点什么？](https://mp.weixin.qq.com/s/t3UJnubw39La3YcmGTqDaA)
+- [AI音乐已经跨过了听感门槛，为什么Spotify不买账？](https://mp.weixin.qq.com/s/xhGKMBnPGlDCDMXtHTdp2g)
 
 ---
 
