@@ -17,7 +17,7 @@
 
 `需求洞察`　·　`架构设计`　·　`决策判断`　·　`持续迭代`
 
-🌐 GitHub · ✉️ 邮箱：13808620008@163.com · 📞 手机：13808620008 · 💬 微信：M0roo0
+🌐 GitHub · 📕 [小红书](https://www.xiaohongshu.com/user/profile/69f4d5050000000002002001?xsec_token=YBOOeuqm_EfONU4muKT0C7K-ZVGkOJKjDYqt0darm6Sd0=&xsec_source=app_share&xhsshare=&shareRedId=OD9INEc6ND42NzUyOTgwNjY1OTc2NTY6&apptime=1787848721&share_id=51d6d411025c492096f371c9d9277914&share_channel=wechat&wechatWid=9994e034fc0c0057cbac156409810ef6&wechatOrigin=menu) · ✉️ 邮箱：13808620008@163.com · 📞 手机：13808620008 · 💬 微信：M0roo0
 
 ---
 
