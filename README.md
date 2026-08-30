@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/Moro-w">
-    <img src="https://raw.githubusercontent.com/Moro-w/Moro-w/main/assets/portfolio-launch.svg" width="100%" alt="王博文 (Moro) — 终端打字" />
+    <img src="https://raw.githubusercontent.com/Moro-w/Moro-w/main/assets/portfolio-launch.svg" width="100%" alt="Moro — 横向复古 CRT 终端个人主页封面" />
   </a>
 </p>
 
