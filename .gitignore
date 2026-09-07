@@ -1,0 +1,27 @@
+
+
+# Local secrets and private working files (keep example configuration public)
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.*.example
+!**/.env.template
+!**/.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+.secrets/
+credentials.local.*
+secrets.local.*
+*.sqlite
+*.sqlite3
+*.db
+*.db-*
+*.sqlite-*
+*.sqlite3-*
+docs/private/
+notes/private/
+.DS_Store
