@@ -29,4 +29,4 @@
 
 ## 联系
 
-[产品拆解报告](https://moro-w.github.io/ai-product-architecture-analysis/) · [邮件联系](mailto:13808620008@163.com)
+[邮件联系](mailto:13808620008@163.com)
