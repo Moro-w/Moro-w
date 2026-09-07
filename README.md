@@ -4,7 +4,7 @@
 
 这里记录我的产品原型、AI 产品架构拆解和可复用工作流。通过具体项目展示问题定义、方案取舍和实现过程。
 
-<img src="./assets/portfolio-launch.svg" width="360" alt="Moro 的复古终端封面：需求洞察、架构设计、决策判断、持续迭代" />
+<img src="./assets/portfolio-launch.svg" width="100%" alt="Moro 的复古终端封面：需求洞察、架构设计、决策判断、持续迭代" />
 
 ## 代表项目
 
