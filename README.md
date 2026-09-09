@@ -21,6 +21,7 @@
 
 ## 精选写作
 
+- [和伴侣吵架后，GPT-6适合当“裁判”吗？](https://mp.weixin.qq.com/s/QROY5Y-6C27fAe41yA4HQw)
 - [长辈总问“下一步点哪里”，为什么大字版还不够？](https://mp.weixin.qq.com/s/SwdztYIYf_T7lUgx5tblcA)
 - [当会议纪要进入执行环节，AI的决策边界如何确定](https://mp.weixin.qq.com/s/h-TM4HU9pxhZ8lxPWLm4kQ)
 - [Grok 4.6 接入 Copilot，模型如何进入市场？](https://mp.weixin.qq.com/s/lh-GOqMqSF4cebI6PoAIrQ)
